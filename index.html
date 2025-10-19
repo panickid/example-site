@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
-  <body>
+  <body style="margin: 0; padding: 0;">
 
     <header class="shadow-sm container-fluid">
 
@@ -157,21 +157,69 @@
       <h1>Свяжитесь с нами</h1>
       <div class="d-flex flex-row">
         <div class="bg-light d-flex flex-column p-4 rounded-4">
-          <h4 class='text-primary'><i class="fa-solid fa-headset"></i>Поддержка</h4>
-          <p><i class="fa-solid fa-location-dot"></i>пушкина, колотушкина</p>
-          <p><i class="fa-solid fa-phone"></i>88005353535</p>
-          <p><i class="fa-solid fa-envelope"></i>info@bebri.net</p>
-          <p><i class="fa-solid fa-clock"></i>9-18</p>
+          <h4 class='text-primary'><i class="fa-solid fa-headset me-3"></i>Поддержка</h4>
+          <p><i class="fa-solid fa-location-dot me-2"></i>пушкина, колотушкина</p>
+          <p><i class="fa-solid fa-phone me-2"></i>88005353535</p>
+          <p><i class="fa-solid fa-envelope me-2"></i>info@bebri.net</p>
+          <p><i class="fa-solid fa-clock me-2"></i>9-18</p>
           <hr class="text-secondary">
           <p class="text-secondary">Напишите нам - ответим в течении часа!</p>
         </div>
         <div class="border border-secondary p-2 rounded-3">
-          <textarea name="name" class="text-secondary" rows="1" cols="25">Ваше имя</textarea>
-          <textarea name="name" class="text-secondary" rows="1" cols="25">email</textarea>
-          <textarea name="name" class="text-secondary" rows="10" cols="50">Ваше имя</textarea>
+          <div class="d-flex flex-row gap-3">
+            <input class="form-control m-left-2" id="exampleFormControlInput1" placeholder="Ваше имя">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+          </div>
+          <div class="mb-3 my-4">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Сообщение"></textarea>
+          </div>
+          <button class="btn btn-primary container-fliud text-white w-100 py-2"><i class="fa-solid fa-paper-plane"></i> Отправить сообщение!</button>
         </div>
       </div>
     </section>
+
+
+    <section class="bg-dark bg-gradient pb-3">
+      <div class=" w-75 m-auto d-flex py-5 justify-content-around">
+        <div class="py-3">
+          <div class="text-light fw-bold mb-3"><i class="fa-solid fa-cube rounded-circle bg-primary p-2 me-2"></i>brand</div>
+          <p class="text-light mb-4">Создаем лучшие решение для<br>вашего бизнеса с 2015 года.</p>
+          <i class="fa-solid fa-paper-plane text-white p-1 me-4"></i>
+          <i class="fa-brands fa-whatsapp text-white fs-5 me-4"></i>
+          <i class="fa-brands fa-instagram text-white fs-5"></i>
+        </div>
+        <div class="">
+          <div class="text-primary d-flex flex-column fw-bold">ПРОДУКТЫ</div>
+          <div class="text-white">
+            <p>Все товары</p>
+            <p>Новинки</p>
+            <p>Хиты продаж</p>
+            <p>Акции</p>
+          </div>
+        </div>
+        <div class="">
+          <div class="text-primary d-flex flex-column fw-bold">КОМПАНИЯ</div>
+          <div class="text-white">
+            <p>О нас</p>
+            <p>Контакты</p>
+            <p>Вакансии</p>
+            <p>Партнерам</p>
+          </div>
+        </div>
+        <div class="">
+          <div class="text-primary d-flex flex-column fw-bold">ПОДДЕРЖКА</div>
+          <div class="text-white">
+            <p>FAQ</p>
+            <p>Доставка</p>
+            <p>Возврат</p>
+            <p>Гарантия</p>
+          </div>
+        </div>
+    </div>
+    <hr class="w-75 m-auto text-white pb-4">
+    <p class="text-white text-center pb-0">(c) 2025 pelmeni. все права защищены | Политика конфиденцальности</p>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
