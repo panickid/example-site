@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style media="screen">
+    .cstm {
+      color: #945060;
+    }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
@@ -9,56 +14,59 @@
   </head>
   <body style="margin: 0; padding: 0;">
 
-    <header class="shadow-sm container-fluid">
 
-      <div class="container d-flex align-items-center justify-content-between p-3">
 
-        <div class="fw-bold">
-          <i class="fa-solid fa-user"></i> brand
-        </div>
-        <div class="d-flex align-items-center flex-row">
-          <a class="text-decoration-none text-secondary mx-2" href="#">Главная</a>
-          <a class="text-decoration-none text-secondary mx-2" href="#">Товары</a>
-          <div class="dropdown mx-2">
-            <p class="text-secondary m-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Услуги</p>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+    <div style="background-image: url(pelm.jpg)";>
+      <header class="shadow-sm container-fluid">
+
+        <div class="container d-flex align-items-center justify-content-between p-3">
+
+          <div class="fw-bold">
+            <div class="text-white"><i class="fa-solid fa-bolt-lightning"></i> Клан Крутых Пельменей</div>
           </div>
-          <a class="text-decoration-none text-secondary pr-2" href="#">Контакты</a>
+          <div class="d-flex align-items-center flex-row">
+            <a class="text-decoration-none text-white mx-2" href="#">Главная</a>
+            <a class="text-decoration-none text-white mx-2" href="#">Товары</a>
+            <div class="dropdown mx-2">
+              <p class="text-white m-0 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Услуги</p>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <a class="text-decoration-none text-white pr-2" href="#">Контакты</a>
+          </div>
+
         </div>
+      </header>
 
+
+      <section class="d-flex text-white justify-content-center align-items-center flex-column" style="padding: 20%;">
+          <h1 class="fw-bold" style="font-size: 50px;">Клан крутых пельменей</h1>
+          <p class="pt-3 fs-4">держим в страхе все рестораны</p>
+          <button class="bg-primary text-white p-2 rounded-3" type="button">Подробнее ↓</button>
+      </section>
+    </div>
+
+    <section class="flex-column bg-dark p-5">
+      <div class="d-flex fw-bolder fs-1 cstm justify-content-center align-items-center">
+        <i class="fa-solid fa-rocket me-2"> </i> <p class="pt-2"> Готовы вступить?</p>
       </div>
-    </header>
-
-
-    <section class="d-flex bg-light justify-content-center align-items-center flex-column p-5">
-        <h1>Добро пожаловать на наш сайт</h1>
-        <p class=" pt-3 ">кароче крутой текст типо</p>
-        <button class="bg-primary text-white p-2 rounded-3" type="button">Посмотреть готовые решения ↓</button>
-    </section>
-
-
-    <section class="flex-column p-5">
-      <div class="d-flex fw-bolder fs-4 justify-content-center align-items-center">
-        <i class="fa-solid fa-rocket text-primary"> </i> <p class="text-primary pt-2"> Готовы начать?</p>
-      </div>
-      <div class="m-auto w-25 p-1" style="background-image: linear-gradient(to right, #3483eb 0%, #58eb34 100%);"></div>
-      <p class="text-center">Оставьте заявку - и мы свяжемся блаблаблабла!</p>
-      <div class='d-flex justify-content-center'><button class="border border-primary rounded-5 text-primary bg-white p-2"><i class="fa-solid fa-paper-plane"></i> Связаться с нами</button></div>
+      <div class="m-auto w-25 p-1" style="background-image: linear-gradient(to right, #ff2e2e 0%, #a37e7e 100%);"></div>
+      <p class="text-center text-white mt-3 ">Оставь заявку - мы свяжемся с тобой!</p>
+      <div class='d-flex justify-content-center'><button class="border border rounded-5 text-primary bg-white p-2"><i class="fa-solid fa-paper-plane"></i> Связаться с нами</button></div>
     </section>
 
     <section class="py-5 bg-light">
-      <h1 class="text-center">Наши товары</h1>
+      <h1 class="text-center mb-4">поддержать нас</h1>
 
       <div class="d-flex w-75 m-auto justify-content-around">
 
         <div class="card" style="width: 18rem;">
-          <img src="https://www.sherrardslaw.com/wp-content/uploads/2016/08/placeholder-350x150.png" class="card-img-top" alt="...">
+          <img src="https://cs8.pikabu.ru/post_img/2017/12/12/5/1513060607171258525.jpg" class="card-img-top" width="151" height="201">
           <div class="card-body">
-            <h5 class="card-title">Премиум товар</h5>
+            <h5 class="card-title">пельмень</h5>
             <p class="card-text">Высокое качество, надежность и стиль</p>
             <a href="#" class="border border-primary border-2 text-decoration-none rounded-3 py-1 px-4">Подробнее</a>
           </div>
@@ -86,7 +94,7 @@
     </section>
 
     <section class="d-flex align-items-center flex-column py-5">
-      <h1>Специальные предложения</h1>
+      <h1 class="mb-5">Специальные предложения</h1>
 
       <div id="carouselExample" class="carousel slide bg-success w-75 text-white fw-bolder py-5 px-5 d-flex align-items-center wrounded-4" style="height: 400px;">
         <div class="carousel-inner">
@@ -189,7 +197,7 @@
           <i class="fa-brands fa-instagram text-white fs-5"></i>
         </div>
         <div class="">
-          <div class="text-primary d-flex flex-column fw-bold">ПРОДУКТЫ</div>
+          <div class="text-primary d-flex flex-column fw-bold mb-4">ПРОДУКТЫ</div>
           <div class="text-white">
             <p>Все товары</p>
             <p>Новинки</p>
@@ -198,7 +206,7 @@
           </div>
         </div>
         <div class="">
-          <div class="text-primary d-flex flex-column fw-bold">КОМПАНИЯ</div>
+          <div class="text-primary d-flex flex-column fw-bold mb-4">КОМПАНИЯ</div>
           <div class="text-white">
             <p>О нас</p>
             <p>Контакты</p>
@@ -207,7 +215,7 @@
           </div>
         </div>
         <div class="">
-          <div class="text-primary d-flex flex-column fw-bold">ПОДДЕРЖКА</div>
+          <div class="text-primary d-flex flex-column fw-bold mb-4">ПОДДЕРЖКА</div>
           <div class="text-white">
             <p>FAQ</p>
             <p>Доставка</p>
